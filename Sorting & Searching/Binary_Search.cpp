@@ -9,7 +9,7 @@ int binary_search(int a[], int target, int low, int high){
         else    high = mid - 1;
     }
     return -1;
-    // cout << "The target element fount at index no : " << index << endl;
+    // cout << "The target element found at index no : " << index << endl;
 }
 
 int main(){
@@ -22,7 +22,7 @@ int main(){
         int x;  cin >> x;
         if(binary_search(a, x, 0, n-1) == -1) cout << "The element isn't in the list.\n";
         else{
-            cout << "The target element fount at index no : ";
+            cout << "The target element found at index no : ";
             cout << binary_search(a, x, 0, n-1) << endl;    // Indexing 0 base
         }
     }
